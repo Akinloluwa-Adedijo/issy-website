@@ -42,17 +42,28 @@
   --color-white: oklch(0.873 0 0);
   --color-black: oklch(0.1924 0.0016 17.3);
 
-  --color-white-50: oklch(0.9761 0 0);
-  --color-white-100: oklch(0.9461 0 0);
-  --color-white-200: oklch(0.873 0 0);
-  --color-white-300: oklch(0.8328 0 0);
-  --color-white-400: oklch(0.7476 0 0);
-  --color-white-500: oklch(0.683 0 0);
-  --color-white-600: oklch(0.6268 0 0);
-  --color-white-700: oklch(0.5829 0 0);
-  --color-white-800: oklch(0.5138 0 0);
-  --color-white-900: oklch(0.4459 0 0);
-  --color-white-950: oklch(0.3329 0 0);
+  --color-neutral-50: oklch(0.9761 0 0);
+  --color-neutral-100: oklch(0.9461 0 0);
+  --color-neutral-200: oklch(0.873 0 0);
+  --color-neutral-300: oklch(0.8328 0 0);
+  --color-neutral-400: oklch(0.7476 0 0);
+  --color-neutral-500: oklch(0.683 0 0);
+  --color-neutral-600: oklch(0.6268 0 0);
+  --color-neutral-700: oklch(0.5829 0 0);
+  --color-neutral-800: oklch(0.5138 0 0);
+  --color-neutral-900: oklch(0.4459 0 0);
+  --color-neutral-950: oklch(0.3329 0 0);
+
+  --color-accent-about: oklch(0.8174 0.1287 147.18);
+  --color-accennt-fwut-visualizer: oklch(0.771 0.118 62.49);
+  --color-accennt-edna-world: oklch(0.7252 0.1702 22.24);
+  --color-accennt-voftd: oklch(0.733 0.1679 357.55);
+  --color-accennt-paper-dreams: oklch(0.849 0.1498 124.56);
+  --color-accennt-in-the-night: oklch(0.8475 0.097 195.48);
+  --color-accennt-the-beauty: oklch(0.8383 0.1256 98.5);
+  --color-accennt-best-of-both: oklch(0.843 0.081 79.3);
+  --color-accennt-silent-sacrifice: oklch(0.8667 0.0399 285.54);
+  --color-accennt-fwut: oklch(0.7988 0.1066 313.56);
 }
 
 body {
