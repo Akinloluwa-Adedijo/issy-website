@@ -3,7 +3,39 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "ApfelGrotezk-Mittel", Impact, Haettenschweiler,
+    "Arial Narrow Bold", sans-serif;
+}
+
+@font-face {
+  font-family: "ApfelGrotezk-Brukt";
+  src: url("/fonts/ApfelGrotezk-Brukt.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ApfelGrotezk-Fett";
+  src: url("/fonts/ApfelGrotezk-Fett.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ApfelGrotezk-Mittel";
+  src: url("/fonts/ApfelGrotezk-Mittel.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ApfelGrotezk-Regular";
+  src: url("/fonts/ApfelGrotezk-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ApfelGrotezk-Satt";
+  src: url("/fonts/ApfelGrotezk-Satt.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
 }
 
 @theme {
