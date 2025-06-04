@@ -1,4 +1,4 @@
-// import { motion } from "motion/react";
+import { motion } from "motion/react";
 type CustomImageProps = {
   imgSrc: string;
   imgAlt: string;
@@ -15,16 +15,16 @@ const CustomImage = ({
 }: CustomImageProps) => {
   return (
     <div className={`${classname} overflow-hidden`}>
-      {/* <motion.img
+      <motion.img
         src={imgSrc}
         alt={imgAlt}
         width={width}
         height={height}
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.5, ease: [0.65, 0, 0.35, 1] }}
-        className="object-cover"
-      /> */}
-      <img
+        className="object-cover w-full"
+      />
+      {/* <img
         src={imgSrc}
         alt={imgAlt}
         width={width}
@@ -32,7 +32,7 @@ const CustomImage = ({
         // whileHover={{ scale: 1.05 }}
         // transition={{ duration: 0.5, ease: [0.65, 0, 0.35, 1] }}
         className="object-cover"
-      />
+      /> */}
     </div>
   );
 };
