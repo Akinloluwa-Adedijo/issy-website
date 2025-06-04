@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "motion/react";
 
 import { useMobile } from "../../hooks/use-mobile";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
-const transition = { duration: 1, ease: [0.65, 0, 0.35, 1] };
 const opacity = {
   initial: {
     opacity: 0,
@@ -16,20 +16,6 @@ const opacity = {
   closed: {
     opacity: 0,
     transition: { duration: 0.5 },
-  },
-};
-
-const navBackground = {
-  initial: {
-    height: 0,
-  },
-  open: {
-    height: "100vh",
-    transition,
-  },
-  closed: {
-    height: 0,
-    transition,
   },
 };
 
@@ -51,62 +37,49 @@ const navLinks = [
     href: "/contact",
   },
 ];
-const height = {
-  initial: {
-    height: 0,
-  },
-  enter: {
-    height: "auto",
-    transition,
-  },
-  exit: {
-    height: 0,
-    transition,
-  },
-};
 
-interface NavBottomProps {
-  isOpen: boolean;
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
-const NavBottom: React.FC<NavBottomProps> = ({ isOpen, setIsOpen }) => {
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+// interface NavBottomProps {
+//   isOpen: boolean;
+//   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+// }
+// const NavBottom: React.FC<NavBottomProps> = ({ isOpen, setIsOpen }) => {
+//   useEffect(() => {
+//     if (isOpen) {
+//       document.body.style.overflow = "hidden";
+//     } else {
+//       document.body.style.overflow = "auto";
+//     }
 
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [isOpen]);
+//     return () => {
+//       document.body.style.overflow = "auto";
+//     };
+//   }, [isOpen]);
 
-  if (!isOpen) {
-    return null; // Don't render anything if the menu is closed
-  }
+//   if (!isOpen) {
+//     return null; // Don't render anything if the menu is closed
+//   }
 
-  return (
-    <>
-      <div className="sm:hidden  overflow-hidden bg-yellow-300 text-black ">
-        <div>
-          <div className="flex flex-col items-center gap-5 p-5">
-            {navLinks.map((link, index) => (
-              <Link
-                to={link.href}
-                key={index}
-                onClick={() => setIsOpen(false)}
-                className="text-3xl"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+//   return (
+//     <>
+//       <div className="sm:hidden  overflow-hidden bg-yellow-300 text-black ">
+//         <div>
+//           <div className="flex flex-col items-center gap-5 p-5">
+//             {navLinks.map((link, index) => (
+//               <Link
+//                 to={link.href}
+//                 key={index}
+//                 onClick={() => setIsOpen(false)}
+//                 className="text-3xl"
+//               >
+//                 {link.name}
+//               </Link>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -150,7 +123,7 @@ const Header = () => {
               className="sm:hidden relative flex items-center h-full hover:cursor-pointer"
               onClick={() => setIsOpen(!isOpen)}
             >
-              {/* <motion.p
+              <motion.p
                 variants={opacity}
                 animate={!isOpen ? "open" : "closed"}
               >
@@ -162,7 +135,7 @@ const Header = () => {
                 animate={isOpen ? "open" : "closed"}
               >
                 Close
-              </motion.p> */}
+              </motion.p>
             </div>
           </ul>
         </nav>
