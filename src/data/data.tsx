@@ -35,7 +35,7 @@ export const workData: workData[] = [
     year: 2025,
     cover: [
       {
-        imgSrc: "/public/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.JPG",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -53,6 +53,15 @@ export const workData: workData[] = [
     title: "FWUT-Visualizer",
     category: "Direction",
     year: 2025,
+    cover: [
+      {
+        imgSrc: "/images/home_images/issy_home.JPG",
+        imgAlt: "Isioma Idehen Profile Picture",
+        imgWidth: 2400,
+        imgHeight: 3600,
+        containerClassname: "max-h-[500px] flex py-2",
+      },
+    ],
     roleDescription: "Director, Videograpgher & Editor",
     description: [
       "This is a series of visually striking music visuals designed to align with Seyi's artistic vision. With a lot yet to be released. ",
@@ -64,6 +73,15 @@ export const workData: workData[] = [
     title: "Edna's World",
     category: "Direction",
     year: 2024,
+    cover: [
+      {
+        imgSrc: "/images/home_images/issy_home.JPG",
+        imgAlt: "Isioma Idehen Profile Picture",
+        imgWidth: 2400,
+        imgHeight: 3600,
+        containerClassname: "max-h-[500px] flex py-2",
+      },
+    ],
     roleDescription: "Director, Videographer, Editor",
     description: [
       "Edna's World is a visually poetic project inspired by Jorja Smith's teenage Fantasy. It explores themes of nostalgia, longing, and anger through intimate cinematography and dreamy aesthetics.",
@@ -74,6 +92,15 @@ export const workData: workData[] = [
     title: "VOFTD",
     category: "Direction",
     year: 2024,
+    cover: [
+      {
+        imgSrc: "/images/home_images/issy_home.JPG",
+        imgAlt: "Isioma Idehen Profile Picture",
+        imgWidth: 2400,
+        imgHeight: 3600,
+        containerClassname: "max-h-[500px] flex py-2",
+      },
+    ],
     roleDescription: "Podcast Producer, Editor",
     collaborators: [
       "Carson Sharp: Videographer and Editor",
@@ -87,6 +114,15 @@ export const workData: workData[] = [
     title: "Paper Dreams",
     category: "Direction",
     year: 2024,
+    cover: [
+      {
+        imgSrc: "/images/home_images/issy_home.JPG",
+        imgAlt: "Isioma Idehen Profile Picture",
+        imgWidth: 2400,
+        imgHeight: 3600,
+        containerClassname: "max-h-[500px] flex py-2",
+      },
+    ],
     roleDescription: "VFX Editor",
     description: [
       "Artist: Futondon.",
@@ -98,6 +134,15 @@ export const workData: workData[] = [
     title: "The Beauty of Contrasts",
     category: "Creative Direction",
     year: 2024,
+    cover: [
+      {
+        imgSrc: "/images/home_images/issy_home.JPG",
+        imgAlt: "Isioma Idehen Profile Picture",
+        imgWidth: 2400,
+        imgHeight: 3600,
+        containerClassname: "max-h-[500px] flex py-2",
+      },
+    ],
     roleDescription: "Creative/ Art Direction",
     collaborators: [
       "Stephen Ng'ang'a: Photography",
@@ -111,6 +156,15 @@ export const workData: workData[] = [
     title: "The Best of Both Worlds",
     category: "Creative Direction",
     year: 2024,
+    cover: [
+      {
+        imgSrc: "/images/home_images/issy_home.JPG",
+        imgAlt: "Isioma Idehen Profile Picture",
+        imgWidth: 2400,
+        imgHeight: 3600,
+        containerClassname: "max-h-[500px] flex py-2",
+      },
+    ],
     roleDescription: "Creative Director, Make-up artist, Co-stylist, Editor",
     collaborators: [
       "Richard Goodluck: Photography",
@@ -127,6 +181,15 @@ export const workData: workData[] = [
     title: "Silent Sacrifice",
     category: "Creative Direction",
     year: 2024,
+    cover: [
+      {
+        imgSrc: "/images/home_images/issy_home.JPG",
+        imgAlt: "Isioma Idehen Profile Picture",
+        imgWidth: 2400,
+        imgHeight: 3600,
+        containerClassname: "max-h-[500px] flex py-2",
+      },
+    ],
     roleDescription: "Creative Director, Lighting Director",
     collaborators: ["Angelo Pontalti: Photography"],
     description: [
@@ -138,6 +201,15 @@ export const workData: workData[] = [
     title: "FWUT",
     category: "Creative Direction",
     year: 2024,
+    cover: [
+      {
+        imgSrc: "/images/home_images/issy_home.JPG",
+        imgAlt: "Isioma Idehen Profile Picture",
+        imgWidth: 2400,
+        imgHeight: 3600,
+        containerClassname: "max-h-[500px] flex py-2",
+      },
+    ],
     roleDescription: "Creative Director",
     collaborators: [
       "Ednainstyle & Tonoud Studio: Stylists",
