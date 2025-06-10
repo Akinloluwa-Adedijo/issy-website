@@ -8,17 +8,17 @@ const WorkDetailPage = () => {
   console.log(detailData);
 
   return (
-    <section className="pt-30 p-5">
-      <div className="px-8 py-16">
+    <main>
+      <section className="pt-30 p-5 flex flex-col gap-20">
         <div>
           <CustomImage
             imgSrc={"/images/home_images/issy_home.JPG"}
             imgAlt="Isioma Idehen Profile Picture"
             width={2400}
             height={3600}
-            classname="max-h-[50vh] sm:max-h-[70vh] flex py-2"
+            classname="max-h-[50vh] sm:max-h-[70vh] flex"
           />
-          <h1 className="text-yellow-900">{detailData.project.title}</h1>
+          <h1 className="pt-5">{detailData.project.title}</h1>
         </div>
 
         {/* Main Content Section */}
@@ -42,9 +42,89 @@ const WorkDetailPage = () => {
               </div>
             )}
           </div>
+
+          <div className="flex flex-col gap-10">
+            {detailData.project.description && (
+              <>
+                {detailData.project.description.map(
+                  (desc: string, index: number) => (
+                    <p key={index} className="text-gray-300 mb-2">
+                      {desc}
+                    </p>
+                  )
+                )}
+              </>
+            )}
+          </div>
         </div>
-      </div>
-    </section>
+
+        {/* Reference Images */}
+        {detailData.project.referenceImages && (
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-16">
+            {/* Role Section */}
+            <h3 className="text-lg font-medium mb-2">Reference</h3>
+            <div className="col-span-2">
+              <>
+                {detailData.project.referenceImages.map(
+                  (
+                    image: {
+                      imgSrc: string;
+                      imgAlt: string;
+                      imgWidth: number;
+                      imgHeight: number;
+                      containerClassname?: string;
+                    },
+                    index: number
+                  ) => (
+                    <CustomImage
+                      key={index}
+                      imgSrc={image.imgSrc}
+                      imgAlt={image.imgAlt}
+                      width={image.imgWidth}
+                      height={image.imgHeight}
+                      classname={image.containerClassname}
+                    />
+                  )
+                )}
+              </>
+            </div>
+          </div>
+        )}
+
+        {/* Reference Images */}
+        {detailData.project.finalImages && (
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-16">
+            {/* Role Section */}
+            <h3 className="text-lg font-medium mb-2">Final</h3>
+            <div className="col-span-2">
+              <>
+                {detailData.project.finalImages.map(
+                  (
+                    image: {
+                      imgSrc: string;
+                      imgAlt: string;
+                      imgWidth: number;
+                      imgHeight: number;
+                      containerClassname?: string;
+                    },
+                    index: number
+                  ) => (
+                    <CustomImage
+                      key={index}
+                      imgSrc={image.imgSrc}
+                      imgAlt={image.imgAlt}
+                      width={image.imgWidth}
+                      height={image.imgHeight}
+                      classname={image.containerClassname}
+                    />
+                  )
+                )}
+              </>
+            </div>
+          </div>
+        )}
+      </section>
+    </main>
   );
 };
 
