@@ -123,6 +123,35 @@ const WorkDetailPage = () => {
             </div>
           </div>
         )}
+        {detailData.project.shootImages && (
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-16">
+            {/* Role Section */}
+
+            <>
+              {detailData.project.shootImages.map(
+                (
+                  image: {
+                    imgSrc: string;
+                    imgAlt: string;
+                    imgWidth: number;
+                    imgHeight: number;
+                    containerClassname?: string;
+                  },
+                  index: number
+                ) => (
+                  <CustomImage
+                    key={index}
+                    imgSrc={image.imgSrc}
+                    imgAlt={image.imgAlt}
+                    width={image.imgWidth}
+                    height={image.imgHeight}
+                    classname={image.containerClassname}
+                  />
+                )
+              )}
+            </>
+          </div>
+        )}
       </section>
     </main>
   );

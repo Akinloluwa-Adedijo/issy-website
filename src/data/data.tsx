@@ -26,6 +26,13 @@ export interface workData {
     imgHeight: number;
     containerClassname?: string;
   }[];
+  shootImages?: {
+    imgSrc: string;
+    imgAlt: string;
+    imgWidth: number;
+    imgHeight: number;
+    containerClassname?: string;
+  }[];
 }
 
 export const workData: workData[] = [
@@ -97,11 +104,11 @@ export const workData: workData[] = [
     ],
     finalImages: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
-        imgAlt: "Isioma Idehen Profile Picture",
+        imgSrc: "/videos/fwut-visualizer/fwut-visualizer-1.gif",
+        imgAlt: "FWUT Gif Visualizer",
         imgWidth: 2400,
         imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        containerClassname: "max-h-min flex",
       },
     ],
   },
@@ -241,16 +248,7 @@ export const workData: workData[] = [
     description: [
       "The beauty of contrasts was a project led by Vancouver based photographer Stephen His aim was to juxtapose elegance and femininity against the streets - hence the location",
     ],
-    referenceImages: [
-      {
-        imgSrc: "/images/home_images/issy_home.JPG",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
-      },
-    ],
-    finalImages: [
+    shootImages: [
       {
         imgSrc: "/images/home_images/issy_home.JPG",
         imgAlt: "Isioma Idehen Profile Picture",
@@ -284,22 +282,83 @@ export const workData: workData[] = [
       "The Best of Both Worlds is a creative shoot I conceptualized. My aim with this shoot was to show the multidimensions of women. Using makeup, fashion and locations, I was able to pull together looks and tell a story that women do not need to be defines as “feminine” or “masculine”, in fact women are far more complex.",
       "As a London girl, i took inspiration from my city and also current makeup trends at the time i.e Pearls. ",
     ],
-    referenceImages: [
+    shootImages: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        imgSrc: "/images/best_of_both_worlds/bobw-1.JPG",
+        imgAlt: "Model in a Skatepark",
+        imgWidth: 3200,
+        imgHeight: 4800,
+        containerClassname: "min-h-screen flex",
       },
-    ],
-    finalImages: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        imgSrc: "/images/best_of_both_worlds/bobw-2.JPG",
+        imgAlt: "Model in a Skatepark",
+        imgWidth: 3200,
+        imgHeight: 4800,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/best_of_both_worlds/bobw-3.JPG",
+        imgAlt: "Model in a Skatepark",
+        imgWidth: 3200,
+        imgHeight: 4800,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/best_of_both_worlds/bobw-4.JPG",
+        imgAlt: "Model in a Skatepark",
+        imgWidth: 3200,
+        imgHeight: 4800,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/best_of_both_worlds/bobw-5.JPG",
+        imgAlt: "Model in a Skatepark",
+        imgWidth: 3200,
+        imgHeight: 4800,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/best_of_both_worlds/bobw-6.JPG",
+        imgAlt: "Model in a Skatepark",
+        imgWidth: 3200,
+        imgHeight: 4800,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/best_of_both_worlds/bobw-7.jpg",
+        imgAlt: "Model in a Skatepark",
+        imgWidth: 3200,
+        imgHeight: 4800,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/best_of_both_worlds/bobw-8.JPG",
+        imgAlt: "Model in a Skatepark",
+        imgWidth: 3200,
+        imgHeight: 4800,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/best_of_both_worlds/bobw-9.JPG",
+        imgAlt: "Model in a Skatepark",
+        imgWidth: 3200,
+        imgHeight: 4800,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/best_of_both_worlds/bobw-10.JPG",
+        imgAlt: "Model in a Skatepark",
+        imgWidth: 3200,
+        imgHeight: 4800,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/best_of_both_worlds/bobw-11.jpg",
+        imgAlt: "Model in a Skatepark",
+        imgWidth: 3200,
+        imgHeight: 4800,
+        containerClassname: "min-h-screen flex",
       },
     ],
   },
@@ -322,22 +381,41 @@ export const workData: workData[] = [
       "Silent Sacrifice is a creative shoot inspired by a podcast I produced which delved ito the untold stories and feelings of first daughters. The sacrifice of self was a constant theme and feeling trapped, withg a desperation to be seen, heard and understood.",
       "My aim with this shoot was to show exactly that, hence the mood, choice of colour and choice o photography style",
     ],
-    referenceImages: [
+    shootImages: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        imgSrc: "/images/silent_sacrifice/ss-1.JPG",
+        imgAlt: "Model standing in a booth",
+        imgWidth: 1536,
+        imgHeight: 2408,
+        containerClassname: "min-h-screen flex",
       },
-    ],
-    finalImages: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        imgSrc: "/images/silent_sacrifice/ss-2.JPG",
+        imgAlt: "Model standing in a booth",
+        imgWidth: 1536,
+        imgHeight: 2408,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/silent_sacrifice/ss-3.JPG",
+        imgAlt: "Model standing in a booth",
+        imgWidth: 1536,
+        imgHeight: 2408,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/silent_sacrifice/ss-4.JPG",
+        imgAlt: "Model standing in a booth",
+        imgWidth: 1536,
+        imgHeight: 2408,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/silent_sacrifice/ss-5.JPG",
+        imgAlt: "Model standing in a booth",
+        imgWidth: 1536,
+        imgHeight: 2408,
+        containerClassname: "min-h-screen flex",
       },
     ],
   },
@@ -363,16 +441,8 @@ export const workData: workData[] = [
       "Silent Sacrifice is a creative shoot inspired by a podcast I produced which delved ito the untold stories and feelings of first daughters. The sacrifice of self was a constant theme and feeling trapped, withg a desperation to be seen, heard and understood.",
       "My aim with this shoot was to show exactly that, hence the mood, choice of colour and choice o photography style",
     ],
-    referenceImages: [
-      {
-        imgSrc: "/images/home_images/issy_home.JPG",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
-      },
-    ],
-    finalImages: [
+
+    shootImages: [
       {
         imgSrc: "/images/home_images/issy_home.JPG",
         imgAlt: "Isioma Idehen Profile Picture",

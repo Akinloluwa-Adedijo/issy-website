@@ -23,6 +23,7 @@ const CustomImage = ({
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.5, ease: [0.65, 0, 0.35, 1] }}
         className="object-cover w-full"
+        loading="lazy"
       />
       {/* <img
         src={imgSrc}
