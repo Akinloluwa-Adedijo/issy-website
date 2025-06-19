@@ -19,6 +19,7 @@ const WorkDetailPage = () => {
             classname="max-h-[50vh] sm:max-h-[70vh] flex"
           />
           <h1 className="pt-5">{detailData.project.title}</h1>
+          <p className="text-neutral-400">{detailData.project.year}</p>
         </div>
 
         {/* Main Content Section */}

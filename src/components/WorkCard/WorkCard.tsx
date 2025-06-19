@@ -23,8 +23,8 @@ const WorkCard = ({ project }: WorkCardProps) => {
           }
         />
         <div>
-          <p>{project.title}</p>
-          <p>{project.category}</p>
+          <p className="text-lg">{project.title}</p>
+          <p className="text-lg text-neutral-400">{project.category}</p>
         </div>
       </div>
     </Link>
