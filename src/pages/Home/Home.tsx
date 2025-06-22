@@ -1,5 +1,4 @@
 import CustomImage from "../../components/CustomImage/CustomImage";
-import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import WorkCard from "../../components/WorkCard/WorkCard";
 import { workData } from "../../data/data";
 
@@ -29,14 +28,14 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="p-5">
+        <section className="p-5 flex flex-col gap-20">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end justify-between">
             <h2 className="uppercase text-3xl sm:text-[3vw]">Selected Work</h2>
             <a className="underline" href="/work">
               View All Projects
             </a>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 sm:gap-5">
             <WorkCard project={workData[0]} />
             <WorkCard project={workData[1]} />
             <WorkCard project={workData[2]} />

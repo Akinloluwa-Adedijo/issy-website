@@ -2,6 +2,7 @@ export interface workData {
   title: string;
   category: string;
   year: number;
+  accentColor: string;
   cover?: {
     imgSrc: string;
     imgAlt: string;
@@ -40,6 +41,7 @@ export const workData: workData[] = [
     title: "In the Night I Dream",
     category: "Direction",
     year: 2025,
+    accentColor: "accent-in-the-night",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
@@ -78,6 +80,7 @@ export const workData: workData[] = [
     title: "FWUT-Visualizer",
     category: "Direction",
     year: 2025,
+    accentColor: "accent-fwut-visualizer",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
@@ -116,6 +119,7 @@ export const workData: workData[] = [
     title: "Edna's World",
     category: "Direction",
     year: 2024,
+    accentColor: "accent-edna-world",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
@@ -153,6 +157,7 @@ export const workData: workData[] = [
     title: "VOFTD",
     category: "Direction",
     year: 2024,
+    accentColor: "accent-voftd",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
@@ -193,6 +198,7 @@ export const workData: workData[] = [
     title: "Paper Dreams",
     category: "Direction",
     year: 2024,
+    accentColor: "accent-paper-dreams",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
@@ -231,6 +237,7 @@ export const workData: workData[] = [
     title: "The Beauty of Contrasts",
     category: "Creative Direction",
     year: 2024,
+    accentColor: "accent-the-beauty",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
@@ -290,6 +297,7 @@ export const workData: workData[] = [
     title: "The Best of Both Worlds",
     category: "Creative Direction",
     year: 2024,
+    accentColor: "accent-best-of-both",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
@@ -394,6 +402,7 @@ export const workData: workData[] = [
     title: "Silent Sacrifice",
     category: "Creative Direction",
     year: 2024,
+    accentColor: "accent-silent-sacrifice",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
@@ -451,6 +460,7 @@ export const workData: workData[] = [
     title: "FWUT",
     category: "Creative Direction",
     year: 2024,
+    accentColor: "accent-fwut",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",

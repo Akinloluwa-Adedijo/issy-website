@@ -41,6 +41,7 @@ h1 {
   src: url("/fonts/ApfelGrotezk-Satt.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
+  accentcolor: "var(--color-accen nt-in-the-night)";
 }
 
 @theme {
@@ -60,15 +61,15 @@ h1 {
   --color-neutral-950: oklch(0.3329 0 0);
 
   --color-accent-about: oklch(0.8174 0.1287 147.18);
-  --color-accennt-fwut-visualizer: oklch(0.771 0.118 62.49);
-  --color-accennt-edna-world: oklch(0.7252 0.1702 22.24);
-  --color-accennt-voftd: oklch(0.733 0.1679 357.55);
-  --color-accennt-paper-dreams: oklch(0.849 0.1498 124.56);
-  --color-accennt-in-the-night: oklch(0.8475 0.097 195.48);
-  --color-accennt-the-beauty: oklch(0.8383 0.1256 98.5);
-  --color-accennt-best-of-both: oklch(0.843 0.081 79.3);
-  --color-accennt-silent-sacrifice: oklch(0.8667 0.0399 285.54);
-  --color-accennt-fwut: oklch(0.7988 0.1066 313.56);
+  --color-accent-fwut-visualizer: oklch(0.771 0.118 62.49);
+  --color-accent-edna-world: oklch(0.7252 0.1702 22.24);
+  --color-accent-voftd: oklch(0.733 0.1679 357.55);
+  --color-accent-paper-dreams: oklch(0.849 0.1498 124.56);
+  --color-accent-in-the-night: oklch(0.8475 0.097 195.48);
+  --color-accent-the-beauty: oklch(0.8383 0.1256 98.5);
+  --color-accent-best-of-both: oklch(0.843 0.081 79.3);
+  --color-accent-silent-sacrifice: oklch(0.8667 0.0399 285.54);
+  --color-accent-fwut: oklch(0.7988 0.1066 313.56);
 }
 
 body {
