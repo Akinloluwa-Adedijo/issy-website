@@ -21,19 +21,10 @@ const CustomImage = ({
         width={width}
         height={height}
         whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.5, ease: [0.65, 0, 0.35, 1] }}
+        transition={{ duration: 0.35, ease: [0.65, 0, 0.35, 1] }}
         className="object-cover w-full"
         loading="lazy"
       />
-      {/* <img
-        src={imgSrc}
-        alt={imgAlt}
-        width={width}
-        height={height}
-        // whileHover={{ scale: 1.05 }}
-        // transition={{ duration: 0.5, ease: [0.65, 0, 0.35, 1] }}
-        className="object-cover"
-      /> */}
     </div>
   );
 };

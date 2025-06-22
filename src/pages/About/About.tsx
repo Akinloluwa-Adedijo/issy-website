@@ -1,5 +1,6 @@
 import CustomImage from "../../components/CustomImage/CustomImage";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
+import useDocumentTitle from "../../utils/useDocumentTitle";
 
 const aboutImages = [
   {
@@ -18,9 +19,10 @@ const aboutImages = [
   },
 ];
 const About = () => {
+  useDocumentTitle("Isioma Idehen | About");
   return (
     <SectionWrapper title="About">
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-16">
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-5 text-lg">
         <p>
           Isioma Idehen is a director, creative director and writer passionate
           about telling emotive and raw stories across different mediums. With a
@@ -36,7 +38,7 @@ const About = () => {
           create visually appealing narratives
         </p>
       </section>
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-16">
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-5">
         <div></div>
         {aboutImages.map((image, index) => (
           <CustomImage

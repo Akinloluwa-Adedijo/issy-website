@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import CustomImage from "../CustomImage/CustomImage";
+import ScrollToTop from "../../utils/ScrollToTop";
 
 const WorkDetailPage = () => {
   const location = useLocation();
@@ -9,8 +10,9 @@ const WorkDetailPage = () => {
 
   return (
     <main>
-      <section className="pt-30 p-5 flex flex-col gap-20">
-        <div>
+      <section className="p-5 flex flex-col gap-20">
+        <ScrollToTop />
+        <div className="flex flex-col gap-5">
           <CustomImage
             imgSrc={"/images/home_images/issy_home.webp"}
             imgAlt="Isioma Idehen Profile Picture"
@@ -18,22 +20,35 @@ const WorkDetailPage = () => {
             height={3600}
             classname="max-h-[50vh] sm:max-h-[70vh] flex"
           />
-          <h1 className="pt-5">{detailData.project.title}</h1>
-          <p className="text-neutral-400">{detailData.project.year}</p>
+          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-2">
+            <h1
+              className="text-5xl md:text-6xl lg:text-[8vw] uppercase"
+              style={{
+                color: `var(--color-${detailData.project.accentColor})`,
+              }}
+            >
+              {detailData.project.title}
+            </h1>
+            <p className="text-neutral-400 text-lg">
+              {detailData.project.year}
+            </p>
+          </div>
         </div>
 
         {/* Main Content Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
           {/* Role Section */}
-          <div>
-            <h3 className="text-lg font-medium mb-2">Role</h3>
-            <p className="text-gray-300">
-              {detailData.project.roleDescription}
-            </p>
+          <div className="flex flex-col gap-5">
+            <div>
+              <h2 className="text-4xl font-medium mb-2">Role</h2>
+              <p className="text-neutral-400 text-lg">
+                {detailData.project.roleDescription}
+              </p>
+            </div>
             {detailData.project.collaborators && (
-              <div className="mt-4">
-                <h4 className="text-md font-medium mb-2">Collaborators</h4>
-                <ul className="list-none  text-gray-300">
+              <div>
+                <h3 className="text-4xl font-medium">Collaborators</h3>
+                <ul className="list-none  text-neutral-400 text-lg">
                   {detailData.project.collaborators.map(
                     (collaborator: string, index: number) => (
                       <li key={index}>{collaborator}</li>
@@ -49,7 +64,7 @@ const WorkDetailPage = () => {
               <>
                 {detailData.project.description.map(
                   (desc: string, index: number) => (
-                    <p key={index} className="text-gray-300 mb-2">
+                    <p key={index} className="text-white text-lg">
                       {desc}
                     </p>
                   )
@@ -61,9 +76,8 @@ const WorkDetailPage = () => {
 
         {/* Reference Images */}
         {detailData.project.referenceImages && (
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-16">
-            {/* Role Section */}
-            <h3 className="text-lg font-medium mb-2">Reference</h3>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+            <h2 className="text-4xl font-medium">Reference</h2>
             <div className="col-span-2">
               <>
                 {detailData.project.referenceImages.map(
@@ -92,11 +106,10 @@ const WorkDetailPage = () => {
           </div>
         )}
 
-        {/* Reference Images */}
+        {/* Final Images */}
         {detailData.project.finalImages && (
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-16">
-            {/* Role Section */}
-            <h3 className="text-lg font-medium mb-2">Final</h3>
+            <h2 className="text-4xl font-medium">Final</h2>
             <div className="col-span-2">
               <>
                 {detailData.project.finalImages.map(
@@ -125,9 +138,7 @@ const WorkDetailPage = () => {
           </div>
         )}
         {detailData.project.shootImages && (
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-16">
-            {/* Role Section */}
-
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
             <>
               {detailData.project.shootImages.map(
                 (

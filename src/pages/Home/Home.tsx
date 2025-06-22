@@ -1,19 +1,21 @@
 import CustomImage from "../../components/CustomImage/CustomImage";
 import WorkCard from "../../components/WorkCard/WorkCard";
 import { workData } from "../../data/data";
+import useDocumentTitle from "../../utils/useDocumentTitle";
 
 const Home = () => {
+  useDocumentTitle("Isioma Idehen | Home");
   return (
     <main>
       {/* Landing Page Section */}
       <div className="flex flex-col gap-20">
-        <section className="flex flex-col gap-4 p-5">
+        <section className="flex flex-col gap-5 p-5">
           <CustomImage
             imgSrc={"/images/home_images/issy_home.webp"}
             imgAlt="Isioma Idehen Profile Picture"
             width={2400}
             height={3600}
-            classname="max-h-[70vh] flex"
+            classname="max-h-screen flex"
           />
 
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-2">

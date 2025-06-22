@@ -1,5 +1,11 @@
+import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
+
 const Error = () => {
-  return <div>this is the error page</div>;
+  return (
+    <SectionWrapper title="Error">
+      <div>this is the error page</div>
+    </SectionWrapper>
+  );
 };
 
 export default Error;

@@ -78,7 +78,7 @@ const NavBottom: React.FC<NavBottomProps> = ({ isOpen, setIsOpen }) => {
   return (
     <>
       <motion.div
-        className="sm:hidden absolute overflow-hidden top-[100px] bg-black text-white z-10 w-full"
+        className="sm:hidden absolute overflow-hidden top-[75px] bg-black text-white z-10 w-full"
         variants={height}
         initial="initial"
         animate="enter"
