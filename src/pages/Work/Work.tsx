@@ -5,9 +5,9 @@ import { workData } from "../../data/data";
 const Work = () => {
   return (
     <SectionWrapper title="Work">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {workData.map((project, index) => (
-          <WorkCard key={index} project={project} />
+          <WorkCard key={index} project={project} gridCol={project.gridCol} />
         ))}
       </div>
     </SectionWrapper>

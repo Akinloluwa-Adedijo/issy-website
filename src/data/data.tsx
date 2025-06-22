@@ -3,6 +3,7 @@ export interface workData {
   category: string;
   year: number;
   accentColor: string;
+  gridCol?: string;
   cover?: {
     imgSrc: string;
     imgAlt: string;
@@ -42,13 +43,14 @@ export const workData: workData[] = [
     category: "Direction",
     year: 2025,
     accentColor: "accent-in-the-night",
+    gridCol: "5/11",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        containerClassname: "max-h-[70vh] flex",
       },
     ],
     roleDescription: "Writer & Director",
@@ -81,13 +83,14 @@ export const workData: workData[] = [
     category: "Direction",
     year: 2025,
     accentColor: "accent-fwut-visualizer",
+    gridCol: "1 / 9",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        containerClassname: "max-h-[70vh] flex",
       },
     ],
     roleDescription: "Director, Videograpgher & Editor",
@@ -120,13 +123,14 @@ export const workData: workData[] = [
     category: "Direction",
     year: 2024,
     accentColor: "accent-edna-world",
+    gridCol: "6/12",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        containerClassname: "max-h-[70vh] flex",
       },
     ],
     roleDescription: "Director, Videographer, Editor",
@@ -158,13 +162,14 @@ export const workData: workData[] = [
     category: "Direction",
     year: 2024,
     accentColor: "accent-voftd",
+    gridCol: "3 / 10",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        containerClassname: "max-h-[70vh] flex",
       },
     ],
     roleDescription: "Podcast Producer, Editor",
@@ -199,13 +204,14 @@ export const workData: workData[] = [
     category: "Direction",
     year: 2024,
     accentColor: "accent-paper-dreams",
+    gridCol: "1/13",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        containerClassname: "max-h-[70vh] flex",
       },
     ],
     roleDescription: "VFX Editor",
@@ -238,13 +244,14 @@ export const workData: workData[] = [
     category: "Creative Direction",
     year: 2024,
     accentColor: "accent-the-beauty",
+    gridCol: "5/12",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        containerClassname: "max-h-[70vh] flex",
       },
     ],
     roleDescription: "Creative/ Art Direction",
@@ -298,13 +305,14 @@ export const workData: workData[] = [
     category: "Creative Direction",
     year: 2024,
     accentColor: "accent-best-of-both",
+    gridCol: "4/9",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        containerClassname: "max-h-[70vh] flex",
       },
     ],
     roleDescription: "Creative Director, Make-up artist, Co-stylist, Editor",
@@ -403,13 +411,14 @@ export const workData: workData[] = [
     category: "Creative Direction",
     year: 2024,
     accentColor: "accent-silent-sacrifice",
+    gridCol: "5/ 13",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        containerClassname: "max-h-[70vh] flex",
       },
     ],
     roleDescription: "Creative Director, Lighting Director",
@@ -461,13 +470,14 @@ export const workData: workData[] = [
     category: "Creative Direction",
     year: 2024,
     accentColor: "accent-fwut",
+    gridCol: "2/8",
     cover: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        containerClassname: "max-h-[70vh] flex",
       },
     ],
     roleDescription: "Creative Director",

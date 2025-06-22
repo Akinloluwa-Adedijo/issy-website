@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 interface WorkCardProps {
   // Define the props if needed, e.g. project data
   project: workData;
+  gridCol?: string;
 }
 const transition = { duration: 1, ease: [0.65, 0, 0.35, 1] };
 
@@ -17,10 +18,23 @@ const variants = {
 
 const WorkCard = ({ project }: WorkCardProps) => {
   const [hover, setHover] = useState(false);
+
+  const getGridStyle = () => {
+    if (!project.gridCol) return {};
+
+    const [start, end] = project.gridCol.split("/");
+    return {
+      "--grid-start": start,
+      "--grid-end": end || start,
+    } as React.CSSProperties;
+  };
+
   return (
     <Link
       to={`/work/${project.title.replace(/\s+/g, "-").toLowerCase()}`}
       state={{ project }}
+      className="col-span-1 md:col-start-[var(--grid-start)] md:col-end-[var(--grid-end)]"
+      style={getGridStyle()}
     >
       <div className=" flex flex-col gap-4 relative">
         <div
