@@ -43,7 +43,7 @@ h1 {
   font-display: swap;
 }
 
-@theme {
+:root {
   --color-white: oklch(0.873 0 0);
   --color-black: oklch(0.1924 0.0016 17.3);
 
