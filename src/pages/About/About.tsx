@@ -3,14 +3,14 @@ import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 
 const aboutImages = [
   {
-    imgSrc: "/images/home_images/issy_home.JPG",
+    imgSrc: "/images/home_images/issy_home.webp",
     imgAlt: "Isioma Idehen in a studio setting",
     imgWidth: 2400,
     imgHeight: 3600,
     containerClassname: "max-h-[50vh] sm:max-h-[70vh] flex",
   },
   {
-    imgSrc: "/images/home_images/issy_home.JPG",
+    imgSrc: "/images/home_images/issy_home.webp",
     imgAlt: "Isioma Idehen in a creative workspace",
     imgWidth: 2400,
     imgHeight: 3600,

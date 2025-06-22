@@ -42,7 +42,7 @@ export const workData: workData[] = [
     year: 2025,
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -57,7 +57,7 @@ export const workData: workData[] = [
     ],
     referenceImages: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -66,7 +66,7 @@ export const workData: workData[] = [
     ],
     finalImages: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -80,7 +80,7 @@ export const workData: workData[] = [
     year: 2025,
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -95,7 +95,7 @@ export const workData: workData[] = [
     ],
     referenceImages: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -118,7 +118,7 @@ export const workData: workData[] = [
     year: 2024,
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -132,7 +132,7 @@ export const workData: workData[] = [
     ],
     referenceImages: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -141,7 +141,7 @@ export const workData: workData[] = [
     ],
     finalImages: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -155,7 +155,7 @@ export const workData: workData[] = [
     year: 2024,
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -172,7 +172,7 @@ export const workData: workData[] = [
     ],
     referenceImages: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -181,7 +181,7 @@ export const workData: workData[] = [
     ],
     finalImages: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -195,7 +195,7 @@ export const workData: workData[] = [
     year: 2024,
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -210,7 +210,7 @@ export const workData: workData[] = [
     ],
     referenceImages: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -219,7 +219,7 @@ export const workData: workData[] = [
     ],
     finalImages: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -233,7 +233,7 @@ export const workData: workData[] = [
     year: 2024,
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -250,11 +250,39 @@ export const workData: workData[] = [
     ],
     shootImages: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        imgSrc: "/images/beauty_of_contrasts/boc_1.webp",
+        imgAlt: "Model in an Alleyway",
+        imgWidth: 1284,
+        imgHeight: 1585,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/beauty_of_contrasts/boc_2.webp",
+        imgAlt: "Model in an Alleyway",
+        imgWidth: 1284,
+        imgHeight: 1585,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/beauty_of_contrasts/boc_3.webp",
+        imgAlt: "Model in an Alleyway",
+        imgWidth: 1284,
+        imgHeight: 1585,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/beauty_of_contrasts/boc_4.webp",
+        imgAlt: "Model in an Alleyway",
+        imgWidth: 1284,
+        imgHeight: 1585,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/beauty_of_contrasts/boc_5.webp",
+        imgAlt: "Model in an Alleyway",
+        imgWidth: 1284,
+        imgHeight: 1585,
+        containerClassname: "min-h-screen flex",
       },
     ],
   },
@@ -264,7 +292,7 @@ export const workData: workData[] = [
     year: 2024,
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -284,77 +312,77 @@ export const workData: workData[] = [
     ],
     shootImages: [
       {
-        imgSrc: "/images/best_of_both_worlds/bobw-1.JPG",
+        imgSrc: "/images/best_of_both_worlds/bobw-1.webp",
         imgAlt: "Model in a Skatepark",
         imgWidth: 3200,
         imgHeight: 4800,
         containerClassname: "min-h-screen flex",
       },
       {
-        imgSrc: "/images/best_of_both_worlds/bobw-2.JPG",
+        imgSrc: "/images/best_of_both_worlds/bobw-2.webp",
         imgAlt: "Model in a Skatepark",
         imgWidth: 3200,
         imgHeight: 4800,
         containerClassname: "min-h-screen flex",
       },
       {
-        imgSrc: "/images/best_of_both_worlds/bobw-3.JPG",
+        imgSrc: "/images/best_of_both_worlds/bobw-3.webp",
         imgAlt: "Model in a Skatepark",
         imgWidth: 3200,
         imgHeight: 4800,
         containerClassname: "min-h-screen flex",
       },
       {
-        imgSrc: "/images/best_of_both_worlds/bobw-4.JPG",
+        imgSrc: "/images/best_of_both_worlds/bobw-4.webp",
         imgAlt: "Model in a Skatepark",
         imgWidth: 3200,
         imgHeight: 4800,
         containerClassname: "min-h-screen flex",
       },
       {
-        imgSrc: "/images/best_of_both_worlds/bobw-5.JPG",
+        imgSrc: "/images/best_of_both_worlds/bobw-5.webp",
         imgAlt: "Model in a Skatepark",
         imgWidth: 3200,
         imgHeight: 4800,
         containerClassname: "min-h-screen flex",
       },
       {
-        imgSrc: "/images/best_of_both_worlds/bobw-6.JPG",
+        imgSrc: "/images/best_of_both_worlds/bobw-6.webp",
         imgAlt: "Model in a Skatepark",
         imgWidth: 3200,
         imgHeight: 4800,
         containerClassname: "min-h-screen flex",
       },
       {
-        imgSrc: "/images/best_of_both_worlds/bobw-7.jpg",
+        imgSrc: "/images/best_of_both_worlds/bobw-7.webp",
         imgAlt: "Model in a Skatepark",
         imgWidth: 3200,
         imgHeight: 4800,
         containerClassname: "min-h-screen flex",
       },
       {
-        imgSrc: "/images/best_of_both_worlds/bobw-8.JPG",
+        imgSrc: "/images/best_of_both_worlds/bobw-8.webp",
         imgAlt: "Model in a Skatepark",
         imgWidth: 3200,
         imgHeight: 4800,
         containerClassname: "min-h-screen flex",
       },
       {
-        imgSrc: "/images/best_of_both_worlds/bobw-9.JPG",
+        imgSrc: "/images/best_of_both_worlds/bobw-9.webp",
         imgAlt: "Model in a Skatepark",
         imgWidth: 3200,
         imgHeight: 4800,
         containerClassname: "min-h-screen flex",
       },
       {
-        imgSrc: "/images/best_of_both_worlds/bobw-10.JPG",
+        imgSrc: "/images/best_of_both_worlds/bobw-10.webp",
         imgAlt: "Model in a Skatepark",
         imgWidth: 3200,
         imgHeight: 4800,
         containerClassname: "min-h-screen flex",
       },
       {
-        imgSrc: "/images/best_of_both_worlds/bobw-11.jpg",
+        imgSrc: "/images/best_of_both_worlds/bobw-11.webp",
         imgAlt: "Model in a Skatepark",
         imgWidth: 3200,
         imgHeight: 4800,
@@ -368,7 +396,7 @@ export const workData: workData[] = [
     year: 2024,
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -383,35 +411,35 @@ export const workData: workData[] = [
     ],
     shootImages: [
       {
-        imgSrc: "/images/silent_sacrifice/ss-1.JPG",
+        imgSrc: "/images/silent_sacrifice/ss-1.webp",
         imgAlt: "Model standing in a booth",
         imgWidth: 1536,
         imgHeight: 2408,
         containerClassname: "min-h-screen flex",
       },
       {
-        imgSrc: "/images/silent_sacrifice/ss-2.JPG",
+        imgSrc: "/images/silent_sacrifice/ss-2.webp",
         imgAlt: "Model standing in a booth",
         imgWidth: 1536,
         imgHeight: 2408,
         containerClassname: "min-h-screen flex",
       },
       {
-        imgSrc: "/images/silent_sacrifice/ss-3.JPG",
+        imgSrc: "/images/silent_sacrifice/ss-3.webp",
         imgAlt: "Model standing in a booth",
         imgWidth: 1536,
         imgHeight: 2408,
         containerClassname: "min-h-screen flex",
       },
       {
-        imgSrc: "/images/silent_sacrifice/ss-4.JPG",
+        imgSrc: "/images/silent_sacrifice/ss-4.webp",
         imgAlt: "Model standing in a booth",
         imgWidth: 1536,
         imgHeight: 2408,
         containerClassname: "min-h-screen flex",
       },
       {
-        imgSrc: "/images/silent_sacrifice/ss-5.JPG",
+        imgSrc: "/images/silent_sacrifice/ss-5.webp",
         imgAlt: "Model standing in a booth",
         imgWidth: 1536,
         imgHeight: 2408,
@@ -425,7 +453,7 @@ export const workData: workData[] = [
     year: 2024,
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
@@ -444,7 +472,7 @@ export const workData: workData[] = [
 
     shootImages: [
       {
-        imgSrc: "/images/home_images/issy_home.JPG",
+        imgSrc: "/images/home_images/issy_home.webp",
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,

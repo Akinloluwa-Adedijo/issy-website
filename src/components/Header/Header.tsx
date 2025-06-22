@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 
 import { useMobile } from "../../hooks/use-mobile";
 // import { useEffect } from "react";
+
+const transition = { duration: 1, ease: [0.65, 0, 0.35, 1] };
 
 const opacity = {
   initial: {
@@ -38,56 +40,74 @@ const navLinks = [
   },
 ];
 
-// interface NavBottomProps {
-//   isOpen: boolean;
-//   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
-// }
-// const NavBottom: React.FC<NavBottomProps> = ({ isOpen, setIsOpen }) => {
-//   useEffect(() => {
-//     if (isOpen) {
-//       document.body.style.overflow = "hidden";
-//     } else {
-//       document.body.style.overflow = "auto";
-//     }
+const height = {
+  initial: {
+    height: 0,
+  },
+  enter: {
+    height: "100vh",
+    transition,
+  },
+  exit: {
+    height: 0,
+    transition,
+  },
+};
 
-//     return () => {
-//       document.body.style.overflow = "auto";
-//     };
-//   }, [isOpen]);
+interface NavBottomProps {
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const NavBottom: React.FC<NavBottomProps> = ({ isOpen, setIsOpen }) => {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
 
-//   if (!isOpen) {
-//     return null; // Don't render anything if the menu is closed
-//   }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
 
-//   return (
-//     <>
-//       <div className="sm:hidden  overflow-hidden bg-yellow-300 text-black ">
-//         <div>
-//           <div className="flex flex-col items-center gap-5 p-5">
-//             {navLinks.map((link, index) => (
-//               <Link
-//                 to={link.href}
-//                 key={index}
-//                 onClick={() => setIsOpen(false)}
-//                 className="text-3xl"
-//               >
-//                 {link.name}
-//               </Link>
-//             ))}
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
+  if (!isOpen) {
+    return null; // Don't render anything if the menu is closed
+  }
+
+  return (
+    <>
+      <motion.div
+        className="sm:hidden absolute overflow-hidden bg-black text-white z-10 w-full"
+        variants={height}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+      >
+        <div className="flex flex-col h-full items-end gap-15 p-10">
+          {navLinks.map((link, index) => (
+            <Link
+              to={link.href}
+              key={index}
+              onClick={() => setIsOpen(false)}
+              className="text-3xl uppercase font-medium"
+            >
+              {link.name}
+            </Link>
+          ))}
+        </div>
+      </motion.div>
+    </>
+  );
+};
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const isMobile = useMobile();
 
   return (
-    <header className="flex flex-col fixed w-full z-10">
-      <div className="flex justify-between items-center py-5 px-5  backdrop-blur-sm">
+    <header className="relative flex flex-col w-full">
+      <div className="flex justify-between items-center py-5 px-5">
         <div>
           <Link to={"/"}>
             <img
@@ -110,7 +130,7 @@ const Header = () => {
                 to={link.href}
                 key={index}
                 onClick={() => setIsOpen(false)}
-                className="hover:text-red-300"
+                className="text-lg uppercase"
               >
                 {link.name}
               </Link>
@@ -118,28 +138,32 @@ const Header = () => {
           </ul>
 
           {/* Mobile Controls */}
-          <ul aria-hidden={!isMobile ? "true" : "false"}>
-            <div
-              className="sm:hidden relative flex items-center h-full hover:cursor-pointer"
-              onClick={() => setIsOpen(!isOpen)}
+          <div
+            aria-hidden={!isMobile ? "true" : "false"}
+            className="sm:hidden relative flex items-center h-full hover:cursor-pointer"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <motion.p
+              className="text-lg uppercase"
+              variants={opacity}
+              animate={!isOpen ? "open" : "closed"}
             >
-              <motion.p
-                variants={opacity}
-                animate={!isOpen ? "open" : "closed"}
-              >
-                Menu
-              </motion.p>
-              <motion.p
-                className="absolute opacity-0"
-                variants={opacity}
-                animate={isOpen ? "open" : "closed"}
-              >
-                Close
-              </motion.p>
-            </div>
-          </ul>
+              Menu
+            </motion.p>
+            <motion.p
+              className="absolute opacity-0 text-lg uppercase"
+              variants={opacity}
+              animate={isOpen ? "open" : "closed"}
+            >
+              Close
+            </motion.p>
+          </div>
         </nav>
       </div>
+
+      <AnimatePresence mode="wait">
+        {isOpen && <NavBottom isOpen={isOpen} setIsOpen={setIsOpen} />}
+      </AnimatePresence>
     </header>
   );
 };

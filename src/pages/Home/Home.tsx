@@ -9,7 +9,7 @@ const Home = () => {
       <div className="flex flex-col gap-20">
         <section className="flex flex-col gap-4 p-5 pt-20">
           <CustomImage
-            imgSrc={"/images/home_images/issy_home.JPG"}
+            imgSrc={"/images/home_images/issy_home.webp"}
             imgAlt="Isioma Idehen Profile Picture"
             width={2400}
             height={3600}

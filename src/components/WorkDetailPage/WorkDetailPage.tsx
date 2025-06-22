@@ -12,7 +12,7 @@ const WorkDetailPage = () => {
       <section className="pt-30 p-5 flex flex-col gap-20">
         <div>
           <CustomImage
-            imgSrc={"/images/home_images/issy_home.JPG"}
+            imgSrc={"/images/home_images/issy_home.webp"}
             imgAlt="Isioma Idehen Profile Picture"
             width={2400}
             height={3600}
