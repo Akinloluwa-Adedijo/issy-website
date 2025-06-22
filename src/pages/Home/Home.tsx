@@ -1,4 +1,5 @@
 import CustomImage from "../../components/CustomImage/CustomImage";
+import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import WorkCard from "../../components/WorkCard/WorkCard";
 import { workData } from "../../data/data";
 
@@ -7,24 +8,30 @@ const Home = () => {
     <main>
       {/* Landing Page Section */}
       <div className="flex flex-col gap-20">
-        <section className="flex flex-col gap-4 p-5 pt-20">
+        <section className="flex flex-col gap-4 p-5">
           <CustomImage
             imgSrc={"/images/home_images/issy_home.webp"}
             imgAlt="Isioma Idehen Profile Picture"
             width={2400}
             height={3600}
-            classname="max-h-[50vh] sm:max-h-[70vh] flex"
+            classname="max-h-[70vh] flex"
           />
 
-          <div>
-            <h1>Isioma Idehen</h1>
-            <p>Director, Creative Director and Writer</p>
+          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-2">
+            <h1 className="text-5xl md:text-6xl lg:text-[8vw] uppercase">
+              Isioma Idehen
+            </h1>
+            <div className="flex flex-row lg:flex-col items-end gap-5 lg:gap-2 text-lg">
+              <p>Director</p>
+              <p>Creative Director</p>
+              <p>Writer</p>
+            </div>
           </div>
         </section>
 
         <section className="p-5">
-          <div className="flex flex-col gap-2 sm:flex-row sm:flex justify-between">
-            <h2 className="uppercase">Selected Work</h2>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end justify-between">
+            <h2 className="uppercase text-3xl sm:text-[3vw]">Selected Work</h2>
             <a className="underline" href="/work">
               View All Projects
             </a>

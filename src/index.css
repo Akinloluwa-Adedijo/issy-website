@@ -6,6 +6,11 @@
   font-family: "ApfelGrotezk-Mittel", Impact, Haettenschweiler,
     "Arial Narrow Bold", sans-serif;
 }
+h1 {
+  font-family: "ApfelGrotezk-Satt", Impact, Haettenschweiler,
+    "Arial Narrow Bold", sans-serif;
+  line-height: 0.8;
+}
 
 @font-face {
   font-family: "ApfelGrotezk-Brukt";

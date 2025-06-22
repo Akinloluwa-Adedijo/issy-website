@@ -78,13 +78,13 @@ const NavBottom: React.FC<NavBottomProps> = ({ isOpen, setIsOpen }) => {
   return (
     <>
       <motion.div
-        className="sm:hidden absolute overflow-hidden bg-black text-white z-10 w-full"
+        className="sm:hidden absolute overflow-hidden top-[100px] bg-black text-white z-10 w-full"
         variants={height}
         initial="initial"
         animate="enter"
         exit="exit"
       >
-        <div className="flex flex-col h-full items-end gap-15 p-10">
+        <div className="flex flex-col items-start gap-15 p-5">
           {navLinks.map((link, index) => (
             <Link
               to={link.href}
@@ -106,7 +106,7 @@ const Header = () => {
   const isMobile = useMobile();
 
   return (
-    <header className="relative flex flex-col w-full">
+    <header className="relative flex flex-col w-full z-20">
       <div className="flex justify-between items-center py-5 px-5">
         <div>
           <Link to={"/"}>
