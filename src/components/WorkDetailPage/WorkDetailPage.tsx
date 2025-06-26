@@ -1,6 +1,5 @@
 import { useLocation } from "react-router-dom";
 import CustomImage from "../CustomImage/CustomImage";
-import ScrollToTop from "../../utils/ScrollToTop";
 
 const WorkDetailPage = () => {
   const location = useLocation();
@@ -11,7 +10,6 @@ const WorkDetailPage = () => {
   return (
     <main>
       <section className="p-5 flex flex-col gap-20">
-        <ScrollToTop />
         <div className="flex flex-col gap-5">
           <CustomImage
             imgSrc={"/images/home_images/issy_home.webp"}

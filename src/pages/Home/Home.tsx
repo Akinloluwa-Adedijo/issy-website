@@ -6,9 +6,9 @@ import useDocumentTitle from "../../utils/useDocumentTitle";
 const Home = () => {
   useDocumentTitle("Isioma Idehen | Home");
   return (
-    <main>
+    <>
       {/* Landing Page Section */}
-      <div className="flex flex-col gap-20">
+      <section className="flex flex-col gap-20">
         <section className="flex flex-col gap-5 p-5">
           <CustomImage
             imgSrc={"/images/home_images/issy_home.webp"}
@@ -44,8 +44,8 @@ const Home = () => {
             <WorkCard project={workData[3]} />
           </div>
         </section>
-      </div>
-    </main>
+      </section>
+    </>
   );
 };
 
