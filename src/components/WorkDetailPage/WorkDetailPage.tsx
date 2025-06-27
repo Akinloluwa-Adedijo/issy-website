@@ -75,7 +75,7 @@ const WorkDetailPage = () => {
         {/* Reference Images */}
         {detailData.project.referenceImages && (
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-            <h2 className="text-4xl font-medium">Reference</h2>
+            <h2 className="text-4xl font-medium">Inspiration</h2>
             <div className="col-span-2">
               <>
                 {detailData.project.referenceImages.map(
@@ -107,7 +107,7 @@ const WorkDetailPage = () => {
         {/* Final Images */}
         {detailData.project.finalImages && (
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-16">
-            <h2 className="text-4xl font-medium">Final</h2>
+            <h2 className="text-4xl font-medium">Execution</h2>
             <div className="col-span-2">
               <>
                 {detailData.project.finalImages.map(

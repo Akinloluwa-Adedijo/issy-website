@@ -95,9 +95,8 @@ export const workData: workData[] = [
     ],
     roleDescription: "Director, Videograpgher & Editor",
     description: [
-      "This is a series of visually striking music visuals designed to align with Seyi's artistic vision. With a lot yet to be released. ",
+      "This is a series of visually striking music visuals designed to align with Seyi's artistic vision. ",
       "Keeping in theme with the album's black and gold aesthetic, the project incorporates Yoruba subtitles to honor his cultural roots, while the use of collage-style frame divisions and match-split effects enhances the dynamic storytelling. ",
-      "As the director, videographer, and editor, I ensured each visualizer complemented Seyi’s sound, creating a cohesive and immersive viewing experience.",
     ],
     referenceImages: [
       {
@@ -180,15 +179,7 @@ export const workData: workData[] = [
     description: [
       "VOTFD: Voices of the first daughter, is an audio visual podcast where we dive into the untold stories of first daughters who bear the weight of family expectations, hidden struggles, and sacrifices. through intimate conversations, we share our experiences of responsibility, and loneliness, and the pressure to always be  'the strong one'",
     ],
-    referenceImages: [
-      {
-        imgSrc: "/images/home_images/issy_home.webp",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
-      },
-    ],
+
     finalImages: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
@@ -220,15 +211,6 @@ export const workData: workData[] = [
       "Song: Paper Dreams",
       "A re-edit of an already completed music video by another artist. I was requested for addtional work, specifically for VFX. In this scene, the artist wanted money flowing down to coincide with the lyrics of the chorus",
     ],
-    referenceImages: [
-      {
-        imgSrc: "/images/home_images/issy_home.webp",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
-      },
-    ],
     finalImages: [
       {
         imgSrc: "/images/home_images/issy_home.webp",
@@ -255,10 +237,7 @@ export const workData: workData[] = [
       },
     ],
     roleDescription: "Creative/ Art Direction",
-    collaborators: [
-      "Stephen Ng'ang'a: Photography",
-      "Seyi Atilola: Light Design",
-    ],
+    collaborators: ["Stephen Ng'ang'a: Photography", "Edna Mbewe: Styling"],
     description: [
       "The beauty of contrasts was a project led by Vancouver based photographer Stephen His aim was to juxtapose elegance and femininity against the streets - hence the location",
     ],
@@ -315,16 +294,15 @@ export const workData: workData[] = [
         containerClassname: "max-h-[70vh] flex",
       },
     ],
-    roleDescription: "Creative Director, Make-up artist, Co-stylist, Editor",
+    roleDescription: "Creative Director/ Art Director, Editor",
     collaborators: [
       "Richard Goodluck: Photography",
       "Seyi Atilola: BTS Photography",
       "Deo Rodriguez: Sulemanji",
-      "Ednainstyle: Stylist",
+      "Edna Mbewe: Stylist",
     ],
     description: [
       "The Best of Both Worlds is a creative shoot I conceptualized. My aim with this shoot was to show the multidimensions of women. Using makeup, fashion and locations, I was able to pull together looks and tell a story that women do not need to be defines as “feminine” or “masculine”, in fact women are far more complex.",
-      "As a London girl, i took inspiration from my city and also current makeup trends at the time i.e Pearls. ",
     ],
     shootImages: [
       {
@@ -425,7 +403,6 @@ export const workData: workData[] = [
     collaborators: ["Angelo Pontalti: Photography"],
     description: [
       "Silent Sacrifice is a creative shoot inspired by a podcast I produced which delved ito the untold stories and feelings of first daughters. The sacrifice of self was a constant theme and feeling trapped, withg a desperation to be seen, heard and understood.",
-      "My aim with this shoot was to show exactly that, hence the mood, choice of colour and choice o photography style",
     ],
     shootImages: [
       {
@@ -482,7 +459,7 @@ export const workData: workData[] = [
     ],
     roleDescription: "Creative Director",
     collaborators: [
-      "Ednainstyle & Tonoud Studio: Stylists",
+      "Edna Mbewe & Tonoud Studio: Stylists",
       "Stephen Ng'ang'a: Photography",
     ],
     description: [

@@ -27,12 +27,12 @@ const navLinks = [
     href: "/work",
   },
   {
-    name: "Moodboard",
-    href: "/moodboard",
-  },
-  {
     name: "About",
     href: "/about",
+  },
+  {
+    name: "Moodboard",
+    href: "/moodboard",
   },
   {
     name: "Contact",
