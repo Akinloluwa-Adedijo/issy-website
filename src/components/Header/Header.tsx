@@ -106,7 +106,8 @@ const Header = () => {
   const isMobile = useMobile();
 
   return (
-    <header className="relative flex flex-col w-full z-20">
+    // <header className="relative flex flex-col w-full z-20">
+    <header className="flex flex-col w-full z-20">
       <div className="flex justify-between items-center py-5 px-5">
         <div>
           <Link to={"/"}>
@@ -122,7 +123,7 @@ const Header = () => {
 
         <nav className="flex uppercase justify-between items-center">
           <ul
-            className="hidden sm:flex justify-between items-center gap-15"
+            className="hidden sm:flex justify-between items-center gap-10"
             aria-hidden={isMobile ? "true" : "false"}
           >
             {navLinks.map((link, index) => (
@@ -130,7 +131,7 @@ const Header = () => {
                 to={link.href}
                 key={index}
                 onClick={() => setIsOpen(false)}
-                className="text-lg uppercase"
+                className="text-lg uppercase text-neutral-400 hover:text-white transition-colors duration-300"
               >
                 {link.name}
               </Link>

@@ -3,6 +3,7 @@ import CustomImage from "../CustomImage/CustomImage";
 import { workData } from "../../data/data";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useMobile } from "../../hooks/use-mobile";
 
 interface WorkCardProps {
   // Define the props if needed, e.g. project data
@@ -18,6 +19,7 @@ const variants = {
 
 const WorkCard = ({ project }: WorkCardProps) => {
   const [hover, setHover] = useState(false);
+  const isMobile = useMobile();
 
   const getGridStyle = () => {
     if (!project.gridCol) return {};
@@ -56,7 +58,7 @@ const WorkCard = ({ project }: WorkCardProps) => {
             style={{ backgroundColor: `var(--color-${project.accentColor})` }}
             variants={variants}
             initial="hidden"
-            animate={hover ? "visible" : "hidden"}
+            animate={hover || isMobile ? "visible" : "hidden"}
           ></motion.div>
         </div>
         <div>
