@@ -18,11 +18,11 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<Layout />} errorElement={<Error />}>
         <Route index element={<Home />} />
-        <Route path="work" element={<Work />} />
+        <Route path="works" element={<Work />} />
         <Route path="moodboard" element={<Moodboard />} />
         <Route path="contact" element={<Contact />} />
         <Route path="about" element={<About />} />
-        <Route path="/work/:workTitle" element={<WorkDetailPage />} />
+        <Route path="/works/:workTitle" element={<WorkDetailPage />} />
       </Route>
     )
   );

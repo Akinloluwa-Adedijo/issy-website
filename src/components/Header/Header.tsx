@@ -23,8 +23,8 @@ const opacity = {
 
 const navLinks = [
   {
-    name: "Work",
-    href: "/work",
+    name: "Works",
+    href: "/works",
   },
   {
     name: "About",

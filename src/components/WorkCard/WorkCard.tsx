@@ -33,7 +33,7 @@ const WorkCard = ({ project }: WorkCardProps) => {
 
   return (
     <Link
-      to={`/work/${project.title.replace(/\s+/g, "-").toLowerCase()}`}
+      to={`/works/${project.title.replace(/\s+/g, "-").toLowerCase()}`}
       state={{ project }}
       className="col-span-1 md:col-start-[var(--grid-start)] md:col-end-[var(--grid-end)]"
       style={getGridStyle()}

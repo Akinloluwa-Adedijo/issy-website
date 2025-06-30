@@ -12,11 +12,11 @@ const WorkDetailPage = () => {
       <section className="p-5 flex flex-col gap-20">
         <div className="flex flex-col gap-5">
           <CustomImage
-            imgSrc={"/images/home_images/issy_home.webp"}
-            imgAlt="Isioma Idehen Profile Picture"
-            width={2400}
-            height={3600}
-            classname="max-h-[50vh] sm:max-h-[70vh] flex"
+            imgSrc={detailData.project.cover[0].imgSrc}
+            imgAlt={detailData.project.cover[0].imgAlt}
+            width={detailData.project.cover[0].imgWidth}
+            height={detailData.project.cover[0].imgHeight}
+            classname="h-[50vh] lg:min-h-screen"
           />
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-2">
             <h1

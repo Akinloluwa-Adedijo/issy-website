@@ -86,10 +86,10 @@ export const workData: workData[] = [
     gridCol: "1 / 9",
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.webp",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
+        imgSrc: "/gifs/fwut_viz.gif",
+        imgAlt: "FWUT Visualizer",
+        imgWidth: 800,
+        imgHeight: 450,
         containerClassname: "max-h-[70vh] flex",
       },
     ],
@@ -109,10 +109,10 @@ export const workData: workData[] = [
     ],
     finalImages: [
       {
-        imgSrc: "/videos/fwut-visualizer/fwut-visualizer-1.gif",
-        imgAlt: "FWUT Gif Visualizer",
-        imgWidth: 2400,
-        imgHeight: 3600,
+        imgSrc: "/gifs/fwut_viz.gif",
+        imgAlt: "FWUT Visualizer",
+        imgWidth: 800,
+        imgHeight: 450,
         containerClassname: "max-h-min flex",
       },
     ],
@@ -164,10 +164,10 @@ export const workData: workData[] = [
     gridCol: "3 / 10",
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.webp",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
+        imgSrc: "/gifs/voftd.gif",
+        imgAlt: "Voices of the first daughter Video Preview",
+        imgWidth: 800,
+        imgHeight: 450,
         containerClassname: "max-h-[70vh] flex",
       },
     ],
@@ -182,11 +182,11 @@ export const workData: workData[] = [
 
     finalImages: [
       {
-        imgSrc: "/images/home_images/issy_home.webp",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        imgSrc: "/gifs/voftd.gif",
+        imgAlt: "Voices of the first daughter Video Preview",
+        imgWidth: 800,
+        imgHeight: 450,
+        containerClassname: "max-h-min flex",
       },
     ],
   },
@@ -198,10 +198,10 @@ export const workData: workData[] = [
     gridCol: "1/13",
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.webp",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
+        imgSrc: "/gifs/paper_dreams.gif",
+        imgAlt: "Paper Dreams Video Preview",
+        imgWidth: 800,
+        imgHeight: 450,
         containerClassname: "max-h-[70vh] flex",
       },
     ],
@@ -213,11 +213,11 @@ export const workData: workData[] = [
     ],
     finalImages: [
       {
-        imgSrc: "/images/home_images/issy_home.webp",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        imgSrc: "/gifs/paper_dreams.gif",
+        imgAlt: "Paper Dreams Video Preview",
+        imgWidth: 800,
+        imgHeight: 450,
+        containerClassname: "max-h-min flex",
       },
     ],
   },
@@ -229,10 +229,10 @@ export const workData: workData[] = [
     gridCol: "5/12",
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.webp",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
+        imgSrc: "/images/beauty_of_contrasts/boc_1.webp",
+        imgAlt: "Model in an Alleyway",
+        imgWidth: 1284,
+        imgHeight: 1585,
         containerClassname: "max-h-[70vh] flex",
       },
     ],
@@ -287,10 +287,10 @@ export const workData: workData[] = [
     gridCol: "4/9",
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.webp",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
+        imgSrc: "/images/best_of_both_worlds/bobw-1.webp",
+        imgAlt: "Model in a Skatepark",
+        imgWidth: 3200,
+        imgHeight: 4800,
         containerClassname: "max-h-[70vh] flex",
       },
     ],
@@ -392,10 +392,10 @@ export const workData: workData[] = [
     gridCol: "5/ 13",
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.webp",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
+        imgSrc: "/images/silent_sacrifice/ss-1.webp",
+        imgAlt: "Model standing in a booth",
+        imgWidth: 1536,
+        imgHeight: 2408,
         containerClassname: "max-h-[70vh] flex",
       },
     ],
@@ -450,10 +450,10 @@ export const workData: workData[] = [
     gridCol: "2/8",
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.webp",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
+        imgSrc: "/images/fwut/fwut_1.webp",
+        imgAlt: "FWUT Video Image Preview",
+        imgWidth: 3648,
+        imgHeight: 5472,
         containerClassname: "max-h-[70vh] flex",
       },
     ],
@@ -469,11 +469,25 @@ export const workData: workData[] = [
 
     shootImages: [
       {
-        imgSrc: "/images/home_images/issy_home.webp",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        imgSrc: "/images/fwut/fwut_1.webp",
+        imgAlt: "FWUT Video Image Preview",
+        imgWidth: 3648,
+        imgHeight: 5472,
+        containerClassname: "min-h-[500px] flex",
+      },
+      {
+        imgSrc: "/images/fwut/fwut_2.webp",
+        imgAlt: "FWUT Video Image Preview",
+        imgWidth: 3648,
+        imgHeight: 5472,
+        containerClassname: "min-h-[500px] flex",
+      },
+      {
+        imgSrc: "/images/fwut/fwut_3.webp",
+        imgAlt: "FWUT Video Image Preview",
+        imgWidth: 3648,
+        imgHeight: 5472,
+        containerClassname: "min-h-[500px] flex",
       },
     ],
   },
