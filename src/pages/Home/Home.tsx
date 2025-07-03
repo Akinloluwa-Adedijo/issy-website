@@ -33,7 +33,7 @@ const Home = () => {
         <section className="p-5 flex flex-col gap-20">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end justify-between">
             <h2 className="uppercase text-3xl sm:text-[3vw]">Selected Work</h2>
-            <a className="underline" href="/work">
+            <a className="underline" href="/works">
               View All Projects
             </a>
           </div>
