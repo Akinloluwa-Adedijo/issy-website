@@ -22,7 +22,7 @@ const CustomImage = ({
         height={height}
         // whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.35, ease: [0.65, 0, 0.35, 1] }}
-        className="object-cover w-full"
+        className="object-contain h-full w-full"
         loading="lazy"
       />
     </div>

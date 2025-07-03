@@ -40,7 +40,7 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 sm:gap-5">
             <WorkCard project={workData[0]} />
             <WorkCard project={workData[1]} />
-            <WorkCard project={workData[2]} />
+            <WorkCard project={workData[3]} />
             <WorkCard project={workData[6]} />
           </div>
         </section>

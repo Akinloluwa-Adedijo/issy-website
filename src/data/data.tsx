@@ -4,6 +4,7 @@ export interface workData {
   year: number;
   accentColor: string;
   gridCol?: string;
+  externalLink?: string;
   cover?: {
     imgSrc: string;
     imgAlt: string;
@@ -35,6 +36,13 @@ export interface workData {
     imgHeight: number;
     containerClassname?: string;
   }[];
+  upcomingImages?: {
+    imgSrc: string;
+    imgAlt: string;
+    imgWidth: number;
+    imgHeight: number;
+    containerClassname: string;
+  }[];
 }
 
 export const workData: workData[] = [
@@ -46,35 +54,75 @@ export const workData: workData[] = [
     gridCol: "5/11",
     cover: [
       {
-        imgSrc: "/images/home_images/issy_home.webp",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
-        containerClassname: "max-h-[70vh] flex",
+        imgSrc: "/images/in_the_night_i_dream/In_the_night_i_dream_1.webp",
+        imgAlt: "Cover Image of In the Night I Dream",
+        imgWidth: 6000,
+        imgHeight: 3375,
+        containerClassname: "flex",
       },
     ],
     roleDescription: "Writer & Director",
     description: [
       "In The Night I Dream is my first short film. It is a spiritual thriller - a visually captivating dialogue light experience, that explores the captivating journey of Ada - a young woman burdened by self discovery and doubt, as she learns to embrace her extraordinary gifts.",
-      "Led the design team",
+      // "Led the design team",
       "After pitching and applying to the Global Impact Program with Montreal International Film Festival, I was accepted onto the program and have gained mentorship through the process as well as access to investors.",
     ],
-    referenceImages: [
+    upcomingImages: [
       {
-        imgSrc: "/images/home_images/issy_home.webp",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        imgSrc: "/images/in_the_night_i_dream/In_the_night_i_dream_1.webp",
+        imgAlt: "Image of Workflow and references",
+        imgWidth: 6000,
+        imgHeight: 3375,
+        containerClassname: "min-h-screen flex",
       },
-    ],
-    finalImages: [
       {
-        imgSrc: "/images/home_images/issy_home.webp",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
-        containerClassname: "max-h-[500px] flex",
+        imgSrc: "/images/in_the_night_i_dream/In_the_night_i_dream_2.webp",
+        imgAlt: "Image of Workflow and references",
+        imgWidth: 6000,
+        imgHeight: 3375,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/in_the_night_i_dream/In_the_night_i_dream_3.webp",
+        imgAlt: "Image of Workflow and references",
+        imgWidth: 6000,
+        imgHeight: 3375,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/in_the_night_i_dream/In_the_night_i_dream_4.webp",
+        imgAlt: "Image of Workflow and references",
+        imgWidth: 6000,
+        imgHeight: 3375,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/in_the_night_i_dream/In_the_night_i_dream_5.webp",
+        imgAlt: "Image of Workflow and references",
+        imgWidth: 6000,
+        imgHeight: 3375,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/in_the_night_i_dream/In_the_night_i_dream_6.webp",
+        imgAlt: "Image of Workflow and references",
+        imgWidth: 6000,
+        imgHeight: 3375,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/in_the_night_i_dream/In_the_night_i_dream_7.webp",
+        imgAlt: "Image of Workflow and references",
+        imgWidth: 6000,
+        imgHeight: 3375,
+        containerClassname: "min-h-screen flex",
+      },
+      {
+        imgSrc: "/images/in_the_night_i_dream/In_the_night_i_dream_8.webp",
+        imgAlt: "Image of Workflow and references",
+        imgWidth: 6000,
+        imgHeight: 3375,
+        containerClassname: "min-h-screen flex",
       },
     ],
   },
@@ -90,7 +138,7 @@ export const workData: workData[] = [
         imgAlt: "FWUT Visualizer",
         imgWidth: 800,
         imgHeight: 450,
-        containerClassname: "max-h-[70vh] flex",
+        containerClassname: "flex",
       },
     ],
     roleDescription: "Director, Videograpgher & Editor",
@@ -129,7 +177,7 @@ export const workData: workData[] = [
         imgAlt: "Isioma Idehen Profile Picture",
         imgWidth: 2400,
         imgHeight: 3600,
-        containerClassname: "max-h-[70vh] flex",
+        containerClassname: "flex",
       },
     ],
     roleDescription: "Director, Videographer, Editor",
@@ -155,6 +203,36 @@ export const workData: workData[] = [
         containerClassname: "max-h-[500px] flex",
       },
     ],
+  },
+  {
+    title: "Dear Creative",
+    category: "Direction",
+    year: 2024,
+    accentColor: "accent-dear-creative",
+    gridCol: "2/13",
+    cover: [
+      {
+        imgSrc: "/gifs/dear_creative.gif",
+        imgAlt: "FWUT Visualizer",
+        imgWidth: 800,
+        imgHeight: 450,
+        containerClassname: "flex",
+      },
+    ],
+    roleDescription: "Director, Videographer, Editor",
+    description: [
+      "I created Dear Creative at a time when I was emerging from what I call my creative hell—a season of self-doubt, identity confusion, and suppressed artistry. I was still figuring out who I was, what stories I wanted to tell, and how I wanted to tell them. At its core, this project was born out of a need—to create something I needed to see myself. Something motivational, something honest",
+    ],
+    finalImages: [
+      {
+        imgSrc: "/gifs/dear_creative.gif",
+        imgAlt: "FWUT Visualizer",
+        imgWidth: 800,
+        imgHeight: 450,
+        containerClassname: "max-h-min flex",
+      },
+    ],
+    externalLink: "www.youtube.com",
   },
   {
     title: "VOFTD",
@@ -189,6 +267,7 @@ export const workData: workData[] = [
         containerClassname: "max-h-min flex",
       },
     ],
+    externalLink: "www.youtube.com",
   },
   {
     title: "Paper Dreams",
@@ -233,7 +312,7 @@ export const workData: workData[] = [
         imgAlt: "Model in an Alleyway",
         imgWidth: 1284,
         imgHeight: 1585,
-        containerClassname: "max-h-[70vh] flex",
+        containerClassname: " flex",
       },
     ],
     roleDescription: "Creative/ Art Direction",
@@ -463,8 +542,7 @@ export const workData: workData[] = [
       "Stephen Ng'ang'a: Photography",
     ],
     description: [
-      "Silent Sacrifice is a creative shoot inspired by a podcast I produced which delved ito the untold stories and feelings of first daughters. The sacrifice of self was a constant theme and feeling trapped, withg a desperation to be seen, heard and understood.",
-      "My aim with this shoot was to show exactly that, hence the mood, choice of colour and choice o photography style",
+      "FWUT (F**k what you think) is the lead single for Seyi, The Poet’s upcoming album. His vision for the album cover was to infuse his Nigerian-Yoruba roots with western influence, specifically including tribal marks as the covers main statement and focus. Through research I was able to bring the tribal marks to life -specifically to his region of origin. ",
     ],
 
     shootImages: [

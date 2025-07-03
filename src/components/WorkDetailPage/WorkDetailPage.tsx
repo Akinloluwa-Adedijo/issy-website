@@ -1,11 +1,25 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import CustomImage from "../CustomImage/CustomImage";
+import { workData } from "../../data/data";
 
 const WorkDetailPage = () => {
   const location = useLocation();
   const detailData = location.state;
 
   console.log(detailData);
+
+  // Find current project index
+  const currentProjectIndex = workData.findIndex(
+    (project) => project.title === detailData.project.title
+  );
+
+  // Calculate next and previous indices with wrap-around
+  const nextProjectIndex = (currentProjectIndex + 1) % workData.length;
+  const prevProjectIndex =
+    currentProjectIndex === 0 ? workData.length - 1 : currentProjectIndex - 1;
+
+  const nextProject = workData[nextProjectIndex];
+  const prevProject = workData[prevProjectIndex];
 
   return (
     <main>
@@ -135,6 +149,8 @@ const WorkDetailPage = () => {
             </div>
           </div>
         )}
+
+        {/* Project with just Images */}
         {detailData.project.shootImages && (
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
             <>
@@ -162,6 +178,75 @@ const WorkDetailPage = () => {
             </>
           </div>
         )}
+        {/* Project with just Images */}
+        {detailData.project.upcomingImages && (
+          <div className="grid grid-cols-1 gap-5">
+            <>
+              {detailData.project.upcomingImages.map(
+                (
+                  image: {
+                    imgSrc: string;
+                    imgAlt: string;
+                    imgWidth: number;
+                    imgHeight: number;
+                    containerClassname?: string;
+                  },
+                  index: number
+                ) => (
+                  <CustomImage
+                    key={index}
+                    imgSrc={image.imgSrc}
+                    imgAlt={image.imgAlt}
+                    width={image.imgWidth}
+                    height={image.imgHeight}
+                    classname={image.containerClassname}
+                  />
+                )
+              )}
+            </>
+          </div>
+        )}
+
+        {detailData.project.externalLink && (
+          <div className="w-full pt-20">
+            <a
+              href={`https://${detailData.project.externalLink}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors p-5 border text-3xl"
+              style={{
+                color: `var(--color-${detailData.project.accentColor})`,
+              }}
+            >
+              View Full Video
+            </a>
+          </div>
+        )}
+
+        {/* Project Navigation */}
+        <div className="flex justify-between items-center pt-10 border-t border-neutral-800">
+          <Link
+            to={`/works/${prevProject.title
+              .replace(/\s+/g, "-")
+              .toLowerCase()}`}
+            state={{ project: prevProject }}
+            className="flex flex-col gap-2 hover:opacity-70 transition-opacity"
+          >
+            <span className="text-sm text-neutral-400">Previous Project</span>
+            <span className="text-lg font-medium">{prevProject.title}</span>
+          </Link>
+
+          <Link
+            to={`/works/${nextProject.title
+              .replace(/\s+/g, "-")
+              .toLowerCase()}`}
+            state={{ project: nextProject }}
+            className="flex flex-col gap-2 hover:opacity-70 transition-opacity text-right"
+          >
+            <span className="text-sm text-neutral-400">Next Project</span>
+            <span className="text-lg font-medium">{nextProject.title}</span>
+          </Link>
+        </div>
       </section>
     </main>
   );
