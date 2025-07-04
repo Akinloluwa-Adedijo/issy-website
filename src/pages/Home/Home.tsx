@@ -15,7 +15,7 @@ const Home = () => {
             imgAlt="Isioma Idehen Profile Picture"
             width={2400}
             height={3600}
-            classname="max-h-screen flex"
+            classname="max-h-full flex"
           />
 
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-2">

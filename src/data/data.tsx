@@ -148,10 +148,10 @@ export const workData: workData[] = [
     ],
     referenceImages: [
       {
-        imgSrc: "/images/home_images/issy_home.webp",
-        imgAlt: "Isioma Idehen Profile Picture",
-        imgWidth: 2400,
-        imgHeight: 3600,
+        imgSrc: "/gifs/fwut_viz_reference.gif",
+        imgAlt: "FWUT Vizualizer Reference",
+        imgWidth: 600,
+        imgHeight: 338,
         containerClassname: "max-h-[500px] flex",
       },
     ],

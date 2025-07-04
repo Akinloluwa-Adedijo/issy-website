@@ -30,10 +30,10 @@ const navLinks = [
     name: "About",
     href: "/about",
   },
-  {
-    name: "Moodboard",
-    href: "/moodboard",
-  },
+  // {
+  //   name: "Moodboard",
+  //   href: "/moodboard",
+  // },
   {
     name: "Contact",
     href: "/contact",
