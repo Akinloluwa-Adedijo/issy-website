@@ -41,7 +41,7 @@ const Home = () => {
             <WorkCard project={workData[0]} />
             <WorkCard project={workData[1]} />
             <WorkCard project={workData[3]} />
-            <WorkCard project={workData[6]} />
+            <WorkCard project={workData[7]} />
           </div>
         </section>
       </section>
